@@ -21,6 +21,14 @@ h1{
   padding: 20px;
 }
 
+ul{
+  padding: 20px !important
+}
+
+date {
+  font-size: 15px;
+}
+
 .separator {
   display: flex;
   align-items: center;
