@@ -1,16 +1,18 @@
+ body{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
 /*Calculator*/
+
+
 .wrapper {
 
   display: grid;
-  
   height: 600px;
-
-  grid-template-rows: 100px 1fr;
-
+  grid-template-rows: 100px .1fr;
   grid-template-columns: 1fr;
-
   grid-gap: 1px;
-  
   }
 
  .buttons{
@@ -19,21 +21,23 @@
 
  grid-template-rows : repeat(5,1fr);
 
-grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4,1fr);
 
-grid-gap: 1px;
+  grid-gap: 1px;
     
  }
 
 .container{
 
-width: 400px;
+  grid-column: 3/4;
+  grid-row: 1/2;
+  width: 400px;
       
-Height:600px;
+  Height:600px;
       
-border:1px solid black;
+  border:1px solid black;
       
-margin: 0 auto;
+  margin: 0 auto;
       
 }
 
@@ -45,15 +49,15 @@ input[type=text]{
 
   padding: 20px 30px 20px 35px;
 
-font-size:30px;
+  font-size:30px;
 
-color:white;
+  color:white;
 
-text-align:right;
+  text-align:right;
 
  background:transparent;
 
-border:none;
+  border:none;
 
  width: 400px;
 
@@ -61,59 +65,59 @@ border:none;
 
 .btnr1{
 
-background:#23272a;
+  background:#23272a;
   
-text-align:center;
+  text-align:center;
   
 }
   
 .btnr2{
   
-background:#141921;
+  background:#141921;
   
-text-align:center;
+  text-align:center;
   
 }
 
 .btnr1 >input {
 
-background:transparent;
+  background:transparent;
     
-border:none;
+  border:none;
     
-justify-content:center;
+  justify-content:center;
     
-align-self:end;
+  align-self:end;
     
-color:white;
+  color:white;
     
-font-size:2.5em;
+  font-size:2.5em;
     
-margin-top:25px;
+  margin-top:25px;
     
  }
     
 .btnr2 >input {
     
-background:transparent;
+  background:transparent;
     
-border:none;
+  border:none;
     
-justify-content:center;
+  justify-content:center;
     
-align-self:end;
+  align-self:end;
     
-color:white;
+  color:white;
     
-font-size:2.5em;
+  font-size:2.5em;
     
-Margin-top:25px;
+  Margin-top:25px;
     
 }
 
 .btnC > input {
 
- color: #ff7a00 !important;
+  color: #ff7a00 !important;
   
  }
 
@@ -144,7 +148,6 @@ ul li:hover {
 
 ul li.checked::before{
   content: '';
-  position: absolute;
   border-color: #fff;
   border-style: solid;
   border-width: 0 2px 2px 0;
@@ -156,7 +159,6 @@ ul li.checked::before{
 }
 
 .close {
-  position: absolute;
   right: 0;
   top: 0;
   padding: 12px 16px 12px 16px;
@@ -207,8 +209,27 @@ input {
   background-color: #bbb;
 }
 
+/*weather widget*/
+
+.weatherwidget-io{
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 225px;
+}
+
+/*To-Do List*/
+
+.mydiv{
+  grid-template-columns: 1/2;
+  grid-template-rows: 3/4;
+}
+
 /*Calendar*/
 
+.calendar{
+  grid-template-columns: 3/4;
+  grid-template-rows: 3/4;
+}
 * {box-sizing: border-box;}
 ul {list-style-type: none;}
 body {font-family: Verdana, sans-serif;}
@@ -226,7 +247,7 @@ body {font-family: Verdana, sans-serif;}
 }
 
 .month ul li {
-  color: white;
+  color: black;
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -250,7 +271,7 @@ body {font-family: Verdana, sans-serif;}
 
 .weekdays li {
   display: inline-block;
-  width: 13.6%;
+  width: 13.6
   color: #666;
   text-align: center;
 }
@@ -276,3 +297,9 @@ body {font-family: Verdana, sans-serif;}
   background: #1abc9c;
   color: white !important
 }
+/*
+.greeting{
+  grid-template-columns: 2/3;
+  grid-template-rows: 2/3;
+}
+*/
