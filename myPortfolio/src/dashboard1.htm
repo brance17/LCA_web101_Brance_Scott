@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./dashboard1.css" />
+  </head>
+  <body>
+     
+
+    <div class="grid-container">   
+
+    <div class="clock"
+        <a href="https://time.is/Lubbock" id="time_is_link" rel="nofollow" style="font-size:20px">Time in Lubbock:</a>
+        <span id="Lubbock_z123"></span>
+        <script src="//widget.time.is/en.js"></script>
+        <script>
+        time_is_widget.init({Lubbock_z123:{template:"TIME<br>DATE", time_format:"12hours:minutes:seconds", date_format:"dayname, monthname dnum, year"}});
+        </script>
+    </div>
+
+    <div class="greeting">
+        <div class="hello">
+        <a1>Hello Brance</a1>
+        </div>
+        <a2>“Light tomorrow with today.” —Elizabeth Barrett Browning</a2>
+    </div>
+  
+
+     <!--calculator-->
+
+    <div id='calc-contain'>
+  
+        <form name="calculator">
+          
+          <input type="text" name="answer" />
+          <br>
+          
+          <input type="button" value=" 1 " onclick="calculator.answer.value += '1'" />
+          <input type="button" value=" 2 " onclick="calculator.answer.value += '2'" />
+          <input type="button" value=" 3 " onclick="calculator.answer.value += '3'" />
+          <input type="button" value=" + " onclick="calculator.answer.value += '+'" />
+          <br/>
+          
+          <input type="button" value=" 4 " onclick="calculator.answer.value += '4'" />
+          <input type="button" value=" 5 " onclick="calculator.answer.value += '5'" />
+          <input type="button" value=" 6 " onclick="calculator.answer.value += '6'" />
+          <input type="button" value=" - " onclick="calculator.answer.value += '-'" />
+          </br>
+        
+          <input type="button" value=" 7 " onclick="calculator.answer.value += '7'" />
+          <input type="button" value=" 8 " onclick="calculator.answer.value += '8'" />
+          <input type="button" value=" 9 " onclick="calculator.answer.value += '9'" />
+          <input type="button" value=" x " onclick="calculator.answer.value += '*'" />
+          </br>
+      
+          <input type="button" value=" c " onclick="calculator.answer.value = ''" />
+          <input type="button" value=" 0 " onclick="calculator.answer.value += '0'" />
+          <input type="button" value=" = " onclick="calculator.answer.value = eval(calculator.answer.value)" />
+          <input type="button" value=" / " onclick="calculator.answer.value += '/'" />
+          </br>
+
+  
+        </form>
+       
+      </div>
+
+        <a class="weatherwidget-io" href="https://forecast7.com/en/33d58n101d86/lubbock/?unit=us" data-label_1="LUBBOCK" data-label_2="WEATHER" data-font="Arial Black" data-icons="Climacons Animated" data-mode="Current" data-theme="dark" >LUBBOCK WEATHER</a>
+        <script>
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+        </script>
+
+
+
+
+    <div class="todo">
+    <div id="myDIV" class="header">
+    <h2>My To Do List</h2>
+    <input type="text" id="myInput" placeholder="Title...">
+    <span onclick="newElement()" class="addBtn">Add</span>
+    </div>
+  
+  <ul id="myUL">
+    <li>Hit the gym</li>
+    <li>Pay bills</li>
+    <li>Get groceries</li>
+    <li>Study</li>
+    <li>Fold laundry</li>
+    <li>Organize office</li>
+  </ul>
+  </div>
+
+  <!--Calendar---->
+  
+  <div id="calendar">
+    <h1>February</h1>
+    <table>
+      <tr><td class="lastmonth">30</td><td>1</td><td>2</td><td>3</td><td class="hastask">4</td><td>5</td><td>6</td></tr>
+      <tr><td>7</td><td class="current">8</td><td class="hastask">9</td><td>10</td><td>11</td><td class="hastask">12</td><td>13</td></tr>
+      <tr><td>14</td><td class="hastask">15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td></tr>
+      <tr><td class="hastask">21</td><td>22</td><td>23</td><td>24</td><td>25</td><td class="hastask">26</td><td>27</td></tr>
+      <tr><td>28</td><td>29</td><td class="hastask">30</td><td>31</td><td class="nextmonth">1</td><td>2</td><td>3</td></tr>
+    </table>
+  </div>
+
+
+
+    </div>  
+    
+    </body>
