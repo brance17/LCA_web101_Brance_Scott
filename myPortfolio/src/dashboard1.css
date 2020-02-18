@@ -1,9 +1,9 @@
+
 .body{
 background-image: url(widgetbg.jpg);
   background-repeat: cover;
   background-size: 100% 100%;
-  height: 100vh;
-  width: 100vw;
+ 
 }
 
 .grid-container{
@@ -74,7 +74,6 @@ background-image: url(widgetbg.jpg);
 
   /*weather*/
   .weatherwidget-io{
-
     grid-area: 1 / 2/ 2 /3;
 
  }
@@ -95,6 +94,10 @@ background-image: url(widgetbg.jpg);
 
   .todo{
       grid-area: 3 / 1 / 4 / 2;
+  }
+
+  li{
+    list-style: none;
   }
   * {
     box-sizing: border-box;
@@ -178,7 +181,7 @@ background-image: url(widgetbg.jpg);
     margin: 0;
     border: none;
     border-radius: 0;
-    width: 75%;
+    width: 50%;
     padding: 10px;
     float: left;
     font-size: 16px;
@@ -276,4 +279,131 @@ background-image: url(widgetbg.jpg);
 
 #calendar tr:last-of-type td:first-of-type{border-radius:0 0 0 5px;}
 #calendar tr:last-of-type td:last-of-type{border-radius:0 0 5px 0;}
-/*
+
+@media (min-width : 320px) {
+  .grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-repeat: cover;
+  background-size: 100% 100%;
+  }
+.body{
+  background-image: url(widgetbg.jpg);
+  background-repeat: cover;
+  background-size: 100% 100%;
+}
+
+#calc-contain{
+  grid-area: 1 / 1 / 2 / 2;
+  width: 300px;
+  max-height: 300px;
+}
+  .clock {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .weatherwidget-io{
+
+    grid-area: 2 / 2 / 3 /3;
+    width: 200px;
+
+ }
+ .greeting{
+  grid-area: 2/ 1 / 3 / 2;
+  font-size: 15px;
+  margin-top: 0px;  
+  margin-bottom: 0px;
+ }
+ #calendar{
+  grid-area: 3/ 1/ 4 / 2; 
+ width: 225px;
+ margin-left: 0px;
+}
+
+.todo{
+  grid-area: 3 / 2 / 4 / 3;
+  width: 200px;
+}
+  
+@media (min-width: 768px) {
+  .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-image: url(widgetbg.jpg);
+  background-repeat: cover;
+  background-size: 100% 100%;
+  }
+
+  #calc-contain{
+    grid-area: 1 / 1 / 2 / 2;
+
+  }
+  .clock {
+    grid-area: 1 / 2 / 2 / 3;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .weatherwidget-io{
+    grid-area: 1 / 3/ 2 /4;
+    width: 300px;
+ }
+
+ .greeting{
+  grid-area: 2 / 2 /3 /3;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-left: 0px;
+  height: fit-content;
+ }
+ #calendar{
+  grid-area: 2 / 1 / 3 / 2; 
+ width:300px;
+ height: 200px;
+ margin-top: 0px;
+}
+.todo{
+  grid-area: 2/ 3 / 3 / 4;
+  width: fit-content;
+  
+}
+
+
+@media (min-width: 900px){
+  .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-image: url(widgetbg.jpg);
+  background-repeat: cover;
+  background-size: 100% 100%;
+  }
+
+  #calc-contain{
+    grid-area: 1 / 1 / 2 / 2;
+    width: 350px;
+  }
+  .clock {
+    grid-area: 1 / 3 / 2 / 4;
+    width: fit-content
+  }
+
+  .weatherwidget-io{
+    grid-area: 1 / 2/ 2 /3;
+    width: auto;
+ }
+
+ .greeting{
+  grid-area: 2 / 2 /3 /3;
+  font-size: 30px;
+ }
+ #calendar{
+  grid-area: 3/ 3 / 4 / 4; 
+ width:358px;
+}
+
+.todo{
+  grid-area: 3 / 1 / 4 / 2;
+}
