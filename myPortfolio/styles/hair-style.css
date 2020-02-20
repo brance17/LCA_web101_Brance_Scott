@@ -1,0 +1,100 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1.5fr 1fr;
+    grid-template-areas: ". . logo . ." 
+                         ". . nav . ." 
+                         "hero hero hero hero hero"
+                         " . father actor nerd ."
+                         ". copyright . social ."
+                      
+  }
+  
+  .logo{
+    grid-area: logo; 
+    padding: 20px;
+    padding-bottom: 50px;
+  }
+  
+  .nav{ 
+  grid-area: nav;
+  text-align: center;
+  text-emphasis: bold;
+  line-height: 14px;
+  height: auto;
+  width: auto;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .info > h2 {
+      background: #fff;
+      color: #000;
+      display: inline-block;
+      font-family: poller_oneregular;
+      font-size: 20px;
+      font-weight: normal;
+      margin: 0 0 18px;
+      padding: 23px 27px 20px;
+      text-transform: uppercase;
+  }
+  .hero { 
+    grid-area: hero;
+    
+  }
+  
+  .gallery.father { 
+    grid-area: father;
+  }
+  
+  section.actor { 
+    grid-area:  actor;
+  }
+  
+  section.nerd { grid-area: nerd; }
+  
+  .copyright { 
+    grid-area: copyright; 
+  }
+  
+  .social { grid-area: social; }
+  
+  
+  
+  
+  
+  /*
+  logo{
+   grid-area: 
+  }
+  .nav{
+    grid-area 1 / 2 / 2 / 4: 
+  }
+    
+    
+    .hero { grid-area: hero; 
+    
+    }
+    
+    .father { grid-area: father; 
+    
+    }
+    
+    .actor { grid-area: actor; 
+    
+    }
+    
+    .nerd { grid-area: nerd; 
+    
+    }
+    
+    .copyright { grid-area: copyright; 
+    }
+    
+    .social { grid-area: social; 
+    }
+  /*section.blank1*/
+  /*section.father*/
+  /*section.actor*/
+  /*section.nerd*/
+  /*section.blank2
