@@ -1,0 +1,46 @@
+body{
+    width: 850px;
+    margin: 0 auto;
+    font-family: 'Noto Sans';
+}
+main{
+    background-image: url(../images/nasabg.jpg);
+    color: white;
+    text-align: center;
+    height: 450px;
+    margin-bottom: 20px;
+    
+}
+
+h1{
+    padding-top: 200px;
+    font-size: 50px;
+}
+
+section{
+    display: flex;
+    flex-row: row wrap;
+    justify-content: space-between;
+    height: 374px;
+    background-color: rgb(224, 222, 222); 
+}
+
+article{
+    display: flex;
+    flex-flow: column wrap;
+    width: 270px;
+    background-color: transparent;
+    padding: 20px;
+    font-size: 25px;
+}
+
+p{
+    display: inline;
+    font-size: 17px;
+}
+
+button{
+    width: 50px;
+    margin-top: 10px;
+}
+
