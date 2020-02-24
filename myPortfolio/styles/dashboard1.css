@@ -37,6 +37,9 @@ background-image: url(../images/widgetbg.jpg);
 /* calculator*/
 #calc-contain{
     grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
     width: 350px;
     border: 2px solid black;
     border-radius: 12px;
@@ -58,18 +61,18 @@ background-image: url(../images/widgetbg.jpg);
     transform: translateY(4px);
   }
   input[type=button]:hover {
-    background-color: #003300;
-    color: white;
+    background-color: lightblue;
+    color: black;
   }
   
   input[type = text] {
     position: relative;
     display: block;
-    width: 90%;
+    width: 100%;
     margin: 5px auto;
     font-size: 20px;
     padding: 10px;
-    box-shadow: 4px 0px 12px black inset;
+    box-shadow: 4px 0px 10px black inset;
   }
 
   /*weather*/
