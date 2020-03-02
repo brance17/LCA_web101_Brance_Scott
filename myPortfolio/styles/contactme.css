@@ -1,0 +1,28 @@
+@media (min-width: 320px){
+header{
+    text-align: center;
+}
+h1{
+    color: purple;
+}
+li:hover{
+    color: red;
+}
+.button{
+    height: 30px;
+    padding: 20px 20px 20px 0px;
+}
+}
+@media (min-width: 900px){
+header{
+    font-size: 40px;
+}
+li{
+    font-size: 20px;
+    color: blue;
+}
+p{
+    font-size: 20px;
+    color: 
+}
+}
