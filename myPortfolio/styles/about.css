@@ -46,6 +46,18 @@ h4{
     display: inline-block;
 
 }
+li{
+    font-size: 15px;
+}
+li:hover{
+    color:red;
+}
+a{
+    color: red;
+}
+a:hover{
+    color: pink;
+}
 }
 @media (min-width: 900px){
    body{
@@ -87,8 +99,12 @@ h4{
 
     h4{
         width:400px;
-        font-size: 30px;
+        font-size: 25px;
     }
-  
+    ol{
+        display: inline-block;
+        align-self: center;
+        font-size: 40px;
+    }
   
 }
